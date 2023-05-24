@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Arcane Lore</title>
 
+	<!-- Estilos do Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
 	<!-- Estilo customizado -->
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	
@@ -21,16 +24,21 @@
 			<h1>Arcane Lore</h1>
 		</div>
 
-		<nav class="flex-item"><!-- Início nav -->
-			<ul class="flex-item">
-				<li class="flex-item"><a href="#">Inicio</a></li>
-				<li class="flex-item"><a href="#">Musicas</a></li>
-				<li class="flex-item"><a href="#">Download</a></li>
-				<li class="flex-item"><a href="#">Vídeos</a></li>
-				<li class="flex-item"><a href="imagens">Fotos</a></li>
-				<li class="flex-item"><a href="registro.html">Registro</a></li>
-				<li class="flex-item"><a href="Logar.html">Logar</a></li>
-			</ul>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light"><!-- Início nav -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Musicas</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Download</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">Vídeos</a></li>
+					<li class="nav-item"><a class="nav-link" href="imagens">Fotos</a></li>
+					<li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li>
+					<li class="nav-item"><a class="nav-link" href="Logar.html">Logar</a></li>
+				</ul>
+			</div>
 		</nav><!--/fim nav -->
 	</header><!--/fim header -->
 
@@ -44,13 +52,15 @@
 				<section id="Tiamat">
 					<article id="video">
 						<h3>Vídeo: conheça a história de Tiamat</h3>
-						<iframe width="310" height="170" src="https://www.youtube.com/embed/KV1SV5VqTUQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/KV1SV5VqTUQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+						</div>
 					</article>
 
-					<section class="flex-container">
-						<article id="noticias">
+					<section class="row justify-content-center">
+						<article id="noticias" class="col-lg-8">
 							<h3>Noticias</h3>
-							<ul class="flex-container">
+							<ul>
 								<li>
 									<a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin porttitor varius. Duis imperdiet fringilla viverra. Mauris urna neque, bibendum id sapien id, euismod pretium orci.</a>
 								</li>
@@ -86,32 +96,29 @@
 
 			<aside><!-- Início aside -->
 				<section id="Beholder">
-					<img src="imagens/Beholder.jpg">
+					<img src="imagens/Beholder.jpg" class="img-fluid" alt="Beholder">
 				</section>
 
 				<section id="galeria">
 					<h4>Galeria de fotos</h4>
 					
-					<a href=""><img src="imagens/Abyss.jpg" height="93" width="93"></a>
-					<a href=""><img src="imagens/castelo.png" height="93" width="93"></a>
-					<a href=""><img src="imagens/cidade.png" height="93" width="93"></a>
-					<a href=""><img src="imagens/Dado.png" height="93" width="93"></a>
-					<a href=""><img src="imagens/Dragao Neon.png" height="93" width="93"></a>
-					<a href=""><img src="imagens/Elfos_da_floresta.png" height="93" width="93"></a>
-					<a href=""><img src="imagens/estalagem.jpg" height="93" width="93"></a>
-					<a href=""><img src="imagens/taverna.png" height="93" width="93"></a>
-					<a href=""><img src="imagens/tiamat.png" height="93" width="93"></a>
-					<a href=""><img src="imagens/Beholder.jpg" height="93" width="93"></a>
-
-
-					
+					<a href=""><img src="imagens/Abyss.jpg" height="93" width="93" class="img-fluid"></a>
+					<a href=""><img src="imagens/castelo.png" height="93" width="93" class="img-fluid"></a>
+					<a href=""><img src="imagens/cidade.png" height="93" width="93" class="img-fluid"></a>
+					<a href=""><img src="imagens/Dado.png" height="93" width="93" class="img-fluid"></a>
+					<a href=""><img src="imagens/Dragao Neon.png" height="93" width="93" class="img-fluid"></a>
+					<a href=""><img src="imagens/Elfos_da_floresta.png" height="93" width="93" class="img-fluid"></a>
+					<a href=""><img src="imagens/estalagem.jpg" height="93" width="93" class="img-fluid"></a>
+					<a href=""><img src="imagens/taverna.png" height="93" width="93" class="img-fluid"></a>
+					<a href=""><img src="imagens/tiamat.png" height="93" width="93" class="img-fluid"></a>
+					<a href=""><img src="imagens/Beholder.jpg" height="93" width="93" class="img-fluid"></a>
 				</section>
 			</aside><!--/fim aside -->
 		</div><!--/fim principal -->
 	</main>
 
 	<footer>
-		<p>
+		<p class="text-center">
 			<a href="#">Inicio</a>
 			<a href="#">Musicas</a>
 			<a href="#">Download</a>
@@ -120,9 +127,12 @@
 			<a href="#">Registro</a>
 			<a href="#">Logar</a>
 		</p>
-		<p>
+		<p class="text-center">
 			<strong>2022 <a href="">Arcane Lore</a> - Todos os direitos reservados.</strong>
 		</p>
 	</footer>
+
+	<!-- Scripts do Bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
