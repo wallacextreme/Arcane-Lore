@@ -1,40 +1,59 @@
-<!--formulario-->
 <!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script
-		src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-	  ></script>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <title>Registro</title>
-	</head>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<title>Registro</title>
+	<style>
+		.home-button {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+		}
+	</style>
+</head>
 
 <body class="flex-container">
-<h1 >Bem vindo a pagina de registro do site</h1>
+	<button onclick="window.location.href='index.html'" class="home-button btn btn-primary"><i class="fas fa-home"></i> Voltar para a página inicial</button>
 
- <form class="flex-item" action="/action_page.php" method="POST">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-6">
+				<h1>Bem-vindo à página de registro do site</h1>
 
-	<fieldset class="flex-item" style="max-width: 100%;height: auto;">
-		
-       <legend>Preencha todos os campos</legend>
-       <label for="fname">Primeiro Nome</label>
-       <input type="text" id="fname" name="fname" placeholder="Primeiro Nome" required><br><br>
-       <label for="lname">Último Nome</label>
-       <input type="text" id="lname" name="lname" placeholder="Ultimo Nome" required><br><br>
-       <label for="email">Email:</label>
-       <input type="email" id="email" name="email" placeholder="Digite aqui seu email" required><br><br>
-       <label for="Senha">Senha</label>
-       <input type="password" id="Senha" name="Senha" placeholder="Digite aqui sua senha" required><br><br>
-       <label for="birthday">Aniversário</label>
-       <input type="date" id="birthday" name="birthday" required><br><br>
-       <input type="submit" value="Enviar">
-  
+				<form class="flex-item" action="/action_page.php" method="POST">
+					<fieldset class="flex-item">
+						<legend>Preencha todos os campos</legend>
+						<div class="form-group">
+							<label for="fname">Primeiro Nome</label>
+							<input type="text" class="form-control" id="fname" name="fname" placeholder="Primeiro Nome" required>
+						</div>
+						<div class="form-group">
+							<label for="lname">Último Nome</label>
+							<input type="text" class="form-control" id="lname" name="lname" placeholder="Ultimo Nome" required>
+						</div>
+						<div class="form-group">
+							<label for="email">Email:</label>
+							<input type="email" class="form-control" id="email" name="email" placeholder="Digite aqui seu email" required>
+						</div>
+						<div class="form-group">
+							<label for="Senha">Senha</label>
+							<input type="password" class="form-control" id="Senha" name="Senha" placeholder="Digite aqui sua senha" required>
+						</div>
+						<div class="form-group">
+							<label for="birthday">Aniversário</label>
+							<input type="date" class="form-control" id="birthday" name="birthday" required>
+						</div>
+						<input type="submit" class="btn btn-primary" value="Enviar">
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
 
-
-	</fieldset>
-
-	</form>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+</html>
