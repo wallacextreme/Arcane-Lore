@@ -3,7 +3,7 @@
 [![HTML5](https://img.shields.io/badge/HTML5-Semântico-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-Gradients_&_Flexbox-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.0-7952B3?style=flat-square&logo=bootstrap&logoColor=white)](https://getbootstrap.com/)
-[![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Portfolio_Project-blue?style=flat-square)](#)
 
 Portal temático e interface visual voltada ao universo de RPG de fantasia e narrativas de aventura, integrando páginas de autenticação estilizadas com gradientes modernos e vitrine visual de criaturas e cenários fantásticos.
 
